@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elephant Sinck Band</title>
+    <link rel="icon" type="image/jpeg" href="img/elephantsinck2.JPG" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img src="img/elephantsinck2.JPG" alt="Elephant Sinck Band" />
+          <span>Band</span>
+        </div>
+        <nav class="nav">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#music">Musik</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#tour">Jadwal</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO / HOME -->
+      <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+          <p class="hero-tagline">Band Rock Alternative, Pamulang, Tangerang Selatan</p>
+          <h1 class="hero-title">Elephant Sinck Band</Base></h1>
+          <p class="hero-subtitle">
+            Musik orisinil, energi panggung yang kuat, dan cerita yang jujur.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" id="playLatest">
+              ▶ Dengarkan Single Terbaru
+            </button>
+            <a href="#tour" class="btn outline">Lihat Jadwal Show</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container section-inner two-cols">
+          <div>
+            <h2>Tentang Band</h2>
+            <p>
+                Elephant Sinck adalah band alternative rock dan pop-punk
+                asal Pamulang, Tangerang Selatan, Indonesia.
+                Band ini berdiri sejak tahun 2024 dan didirikan oleh
+                Mas Endor dan Mas Rafli. Elephant Sinck merilis single perdana berjudul
+                “Sedikit Melirik” sebagai langkah awal mereka
+                di skena musik independen Indonesia.
+                
+            </p>
+            <p>
+              Lirik kami bercerita tentang Cinta, keresahan, dan harapan.
+              Kami percaya musik adalah cara terbaik untuk menyampaikan cerita yang jujur.
+            </p>
+          </div>
+          <div class="about-members">
+            <h3>Personil</h3>
+            <ul>
+              <li><strong>Vokal & Guitar</strong> - Endor</li>
+              <li><strong>Bass</strong> - Rafli</li>
+              <li><strong>Drum</strong> - -</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MUSIC -->
+      <section id="music" class="section section-alt">
+        <div class="container section-inner">
+          <h2>Musik</h2>
+          <p class="section-intro">
+            Berikut beberapa rilisan terbaru kami. Tombol play hanya contoh (dummy).
+          </p>
+          <div class="tracks">
+            <div class="track-card">
+              <div>
+                <h3>"Sedikit Melirik"</h3>
+                <p>Single 2024 · Rock Alternatif</p>
+              </div>
+              <button class="btn small" data-track="Sedikit Melirik">
+                ▶ Putar
+              </button>
+            </div>
+            <div class="track-card">
+              <div>
+                <h3>ON PROGRESS"</h3>
+                <p>--------</p>
+              </div>
+              <button class="btn small" data-track="Single 2 - Judul Lagu">
+                ▶ Putar
+              </button>
+            </div>
+            <div class="track-card">
+              <div>
+                <h3>ON PROGRESS</h3>
+                <p>---------</p>
+              </div>
+              <button class="btn small" data-track="EP - Nama EP">
+                ▶ Putar
+              </button>
+            </div>
+          </div>
+          <p id="nowPlaying" class="now-playing">Tidak ada lagu yang diputar.</p>
+          <p id="trackTime" class="track-time">00:00 / 00:00</p>
+          <audio id="audioPlayer"></audio>
+          <div id="playerNotification" class="player-notification" aria-live="polite">
+            <span id="playerNotificationText"></span>
+            <button id="playerStopButton" class="btn small outline">Stop</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="section">
+        <div class="container section-inner">
+          <h2>Galeri</h2>
+          <p class="section-intro">
+            Beberapa momen dari panggung dan sesi studio kami.
+          </p>
+          <div class="gallery-grid">
+            <div class="gallery-item">Galeri 1 </div>
+            <div class="gallery-item">Galeri 2</div>
+            <div class="gallery-item">Galeri 3</div>
+            <div class="gallery-item">Galeri 4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOUR -->
+      <!-- <section id="tour" class="section section-alt">
+        <div class="container section-inner">
+          <h2>Jadwal Show</h2>
+          <div class="tour-list">
+            <div class="tour-item">
+              <div>
+                <h3>29 Jan 2026 - Kota A</h3>
+                <p>Venue: Nama Venue A</p>
+              </div>
+              <span class="badge">Tiket Tersedia</span>
+            </div>
+            <div class="tour-item">
+              <div>
+                <h3>12 Feb 2026 - Kota B</h3>
+                <p>Venue: Nama Venue B</p>
+              </div>
+              <span class="badge badge-soon">Segera</span>
+            </div>
+            <div class="tour-item">
+              <div>
+                <h3>25 Mar 2026 - Kota C</h3>
+                <p>Venue: Nama Venue C</p>
+              </div>
+              <span class="badge badge-past">Selesai</span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container section-inner two-cols">
+          <div>
+            <h2>Kontak & Booking</h2>
+            <p>
+              Untuk undangan manggung, kolaborasi, atau media, silakan hubungi kami
+              melalui form berikut.
+            </p>
+            <ul class="contact-info">
+              <li><strong>Email</strong>: endornp@gmail.com</li>
+              <li><strong>Instagram</strong>: @elephantsinck_band</li>
+              <li><strong>WhatsApp</strong>: +6281210724668</li>
+            </ul>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn primary wide">Kirim Pesan</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Elephant Sinck Band. Semua hak cipta dilindungi.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
